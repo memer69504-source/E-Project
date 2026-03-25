@@ -1,0 +1,107 @@
+#nav {
+  background-color: #1f2933 !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1%;
+}
+
+a {
+  color: #f9fafb !important;
+  scale: 1.05;
+  font-weight: 500 !important;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #facc15 !important;
+}
+
+/* img:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease;
+} */
+
+h1 {
+  font-weight: 700;
+  color: #1f2933;
+}
+
+.carosel-text {
+  font-weight: 700;
+  font-size: 50px;
+  text-shadow: 2px 2px #000000;
+  color: #f9fafb;
+}
+
+.carosel-p {
+  font-size: 20px;
+  text-shadow: 1px 1px #000000;
+  color: #ffffff;
+}
+
+#new {
+  font-size: 400%;
+  font-weight: 600;
+  margin: 1% 0 4%;
+  text-align: center;
+  color: #1f2933;
+}
+
+#foots {
+  background-color: #1f2933 !important;
+  padding: 50px !important;
+  color: #9ca3af;
+}
+
+.search-box {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  width: 250px;
+  border: 2px solid #facc15;
+  padding: 5px;
+  background-color: #fef9c3;
+}
+
+.search-box button {
+  background-color: #facc15;
+  border: none;
+  cursor: pointer;
+}
+
+#service {
+  margin: auto;
+  padding: 50px;
+  margin: 50px 0;
+}
+
+.service-card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+#feedbackform {
+  min-width: 400px;
+  margin: 60px auto;
+  padding: 25px;
+  background: #323f4b;
+  border-radius: 8px;
+  color: #f9fafb;
+}
+
+#button {
+  background: #facc15;
+  border: none;
+  font-weight: bold;
+  color: #1f2933;
+}
+#feedback{background-color: #1f2933 !important;
+max-width: fit-content;}
+#description{scale: 0.9;}

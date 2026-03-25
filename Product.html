@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/logo 1.png" alt="" width="120px"></a>
+            <button class="navbar-toggler btn-outline-warning btn-warning bg-warning" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-2 px-5">
+                    <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></a>
+        </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Product.html">Product</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./Contact Us.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./FeedBack.html">Feedback</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between g-3">
+
+                <div class="col-md-4">
+                    <h1 class="mb-0">Products</h1>
+                </div>
+
+                <div class="col-md-8 ">
+                    <div class="row g-3 justify-content-end">
+
+                        <div class="col-md-3">
+                            <form action="" id="materialform">
+
+                                <label for="material" class="form-label" id="materialselect">Material Type</label>
+                                <select class="form-select" id="material">
+                                    <option selected disabled>Select Material</option>
+                                    <option>Wooden Framed</option>
+                                    <option>LED</option>
+                                    <option>Metal Bordered</option>
+                                    <option>Decorative</option>
+                                    <option>Frameless</option>
+                                    <option>Antique</option>
+                                    <option>Bluetooth</option>
+                                    <option>Acrylic Bordered</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="col-md-3">
+                            <form action="" id="mirrorform">
+
+                                <label for="mirrorType" class="form-label" id="mirrorselect">Mirror Type</label>
+                                <select class="form-select" id="mirrorType">
+                                    <option selected disabled>Select Type</option>
+                                    <option>Living Room Mirror</option>
+                                    <option>Bathroom Mirror</option>
+                                    <option>Bedroom Mirror</option>
+                                    <option>Entryway Mirror</option>
+                                    <option>Dining Room Mirror</option>
+                                    <option>Hallway Mirror</option>
+                                    <option>Office Mirror</option>
+                                    <option>Salon Mirror</option>
+                                </select>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row g-5" id="products">
+
+        </div>
+
+
+
+
+    </div>
+    <div id="footer">
+        <footer class=" row justify-content-center mt-5" id="foots">
+            <div class="text-center col-12 col-lg-6">
+                <img src="./img/logo 1.png"
+                    class=" w-25  img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                    alt="">
+            </div>
+            <ul class="nav justify-content-center border-bottom pb-5 mb-5 g-5 text-center d-md-flex d-sm-flex">
+                <div id="foota" class="d-flex">
+
+                    <li class="nav-item"><a href="./Homepage.html" class="nav-link px-2 text-body- text-light">Home</a>
+                    </li>
+                    <li class="nav-item"><a href="./FeedBack.html"
+                            class="nav-link px-2 text-body- text-light">Feedback</a></li>
+                    <li class="nav-item"><a href="./Product.html"
+                            class="nav-link px-2 text-body-  text-light">Products</a></li>
+                    <li class="nav-item"><a href="./Contact Us.html"
+                            class="nav-link px-2 text-body-  text-light">Contact Us</a></li>
+                    <li class="nav-item"><a href="./About.html" class="nav-link px-2 text-body-  text-light">About</a>
+                    </li>
+                </div>
+            </ul>
+            <p class="text-center text-body- text-light">© 2025 Company, Inc</p>
+        </footer>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
