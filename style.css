@@ -85,17 +85,19 @@ h1 {
 .card {
   background: #ffffff;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
+.card:hover{transform:scale(1.05);}
 
 #feedbackform {
   min-width: 400px;
-  margin: 60px auto;
+
   padding: 25px;
   background: #323f4b;
   border-radius: 8px;
   color: #f9fafb;
 }
-
+#feedbackbg{background-color: #1a2333;}
 #button {
   background: #facc15;
   border: none;

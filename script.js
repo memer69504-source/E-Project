@@ -38,15 +38,16 @@ let mirrorsWithRatings = mirrors.map(item => ({
 
 
     for( i = 0; i <= mirrors.length;i++){
-container.innerHTML+=`<div class="col-6 col-lg-3">
+container.innerHTML+=`<div class="col-6 col-lg-3" id="card">
                 <div class="card text-left">
                     <img class="card-img-top" src="${mirrors[i].image}" alt="">
                     <div class="card-body">
-                        <h4 class="card-title fs-4">${mirrors[i].name}</h4>
-                        <p class="card-text text-dark fs-5">Rs. <b>${mirrors[i].price}</b></p>
-                        <p class="card-text text-muted fs-6 text-truncate " id='description'>${mirrors[i].description}</p>
+                        <h4 class="card-title fs-6">${mirrors[i].name}</h4>
+                        <p class="card-text text-dark fs-6">Rs. <b>${mirrors[i].price}</b>
                         
-                        <a class="btn btn-primary float-end" href="./singleproduct.html?id=${mirrors[i].id}" role="button">BUY</a>
+                        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${mirrors[i].id}" role="button">BUY</a>
+                        </p>
+                        
                     </div>
                 </div>
             </div>` 
@@ -60,7 +61,9 @@ form1.addEventListener('submit',function(){})
 
 let form2=document.getElementById('materialform')
 let select2=document.getElementById('materialselect')
-form2.addEventListener('submit',function(){})
+form2.addEventListener('submit',function(){
+    
+})
 
 function filter1(){
     

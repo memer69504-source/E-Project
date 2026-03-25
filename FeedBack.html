@@ -21,7 +21,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-body{background-color: #ececec !important;}
+    body {
+        background-color: #ececec !important;
+    }
 </style>
 
 <body>
@@ -62,23 +64,21 @@ body{background-color: #ececec !important;}
         </div>
     </nav>
 
-    <div class="container" id="feedback">
+    <div class="container">
+        <div class="row justify-content-center">
 
-        <div class="row justify-content-center align-content-center">
-            <div class="col-12 col-md-12 p-5 ">
-                <div class="col-12 text-center text-light d-flex justify-content-center mx-auto">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="d-flex flex-column justify-content-center align-items-center mx-auto">
-                            <h2 class="fs"><b> Feedback </b></h2>
-                            <p>"We'd love to know how your experience was. Mind sharing a quick reply?" </p>
-                            <p> "Your feedback helps us grow. We'd appreciate it if you could share your experience"</p>
-                        </div>
-                    </div>
+            <div class="col-12 col-md-8 col-lg-6 p-3 " id="feedbackbg">
+
+                
+                <div class="text-center text-light mb-4">
+                    <h2><b>Feedback</b></h2>
+                    <p>We'd love to know how your experience was. Mind sharing a quick reply?</p>
+                    <p>Your feedback helps us grow. We'd appreciate it if you could share your experience.</p>
                 </div>
 
-                <form id="feedbackform">
+                <form id="feedbackform" class=" p-3 rounded">
 
-                    <h3 class="text-center mb-4">Feedback</h3>
+                    <h4 class="text-center mb-3">Feedback</h4>
 
                     <label class="form-label">Name</label>
                     <input type="text" class="form-control mb-3">
@@ -97,6 +97,7 @@ body{background-color: #ececec !important;}
                 </form>
 
             </div>
+
         </div>
     </div>
 
@@ -135,6 +136,12 @@ body{background-color: #ececec !important;}
                 </li>
             </div>
         </ul>
+        <div class="text-center m-2">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
         <p class="text-center text-body- text-light">© 2025 Company, Inc</p>
     </footer>
 

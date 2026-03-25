@@ -59,5 +59,6 @@ container.innerHTML=` <div class="col-md-3">
                 <p><b>Material Type: </b>${singleproduct.materialType}</p>
                 <p><b>Mirror Type: </b>${singleproduct.mirrorType}</p>
                 <button class="btn btn-primary btn-lg">Add to Cart</button>
+                <button class="btn btn-primary btn-lg">Download</button>
 
             </div>`
