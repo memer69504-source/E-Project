@@ -62,3 +62,5 @@ container.innerHTML=` <div class="col-md-3">
                 <button class="btn btn-primary btn-lg">Download</button>
 
             </div>`
+
+            //display products similiar products based on category of current  products displayed on the detail page 
