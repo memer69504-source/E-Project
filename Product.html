@@ -53,7 +53,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="Search">
                     <button class="btn btn-outline-warning" type="submit">Search</button>
                 </form>
             </div>
@@ -72,10 +72,10 @@
                     <div class="row g-3 justify-content-end">
 
                         <div class="col-md-3">
-                            <form action="" id="materialform">
+                            <form action="" id="form1">
 
-                                <label for="material" class="form-label" id="materialselect">Material Type</label>
-                                <select class="form-select" id="material">
+                                <label for="material" class="form-label" id="">Material Type</label>
+                                <select class="form-select" id="select1">
                                     <option selected disabled>Select Material</option>
                                     <option>Wooden Framed</option>
                                     <option>LED</option>
@@ -85,15 +85,17 @@
                                     <option>Antique</option>
                                     <option>Bluetooth</option>
                                     <option>Acrylic Bordered</option>
+                                
                                 </select>
+                            <button class=" btn btn-light btn-outline-dark">Go</button>
                             </form>
                         </div>
 
-                        <div class="col-md-3">
-                            <form action="" id="mirrorform">
+                        <div class="col-md-5 d-flex">
+                            <form action="" id="form2">
 
-                                <label for="mirrorType" class="form-label" id="mirrorselect">Mirror Type</label>
-                                <select class="form-select" id="mirrorType">
+                                <label for="mirrorType" class="form-label" id="">Mirror Type</label>
+                                <select class="form-select" id="select2">
                                     <option selected disabled>Select Type</option>
                                     <option>Living Room Mirror</option>
                                     <option>Bathroom Mirror</option>
@@ -104,6 +106,8 @@
                                     <option>Office Mirror</option>
                                     <option>Salon Mirror</option>
                                 </select>
+                                
+                                <button class="btn btn-light btn-outline-dark" >Go</button>
 
                             </form>
                         </div>

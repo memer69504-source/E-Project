@@ -36,36 +36,84 @@ let mirrorsWithRatings = mirrors.map(item => ({
     rating: 4.5
 }));
 
+  for(let i = 0; i <mirrors.length;i++){
 
-    for( i = 0; i <= mirrors.length;i++){
-container.innerHTML+=`<div class="col-6 col-lg-3" id="card">
-                <div class="card text-left">
-                    <img class="card-img-top" src="${mirrors[i].image}" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title fs-6">${mirrors[i].name}</h4>
-                        <p class="card-text text-dark fs-6">Rs. <b>${mirrors[i].price}</b>
-                        
-                        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${mirrors[i].id}" role="button">BUY</a>
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>` 
+
+        container.innerHTML+=`<div class="col-6 col-lg-3" id="card">
+        <div class="card text-left">
+        <img class="card-img-top" src="${mirrors[i].image}" alt="">
+        <div class="card-body">
+        <h4 class="card-title fs-6">${mirrors[i].name}</h4>
+        <p class="card-text text-dark fs-6">Rs. <b>${mirrors[i].price}</b>
+        
+        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${mirrors[i].id}" role="button">BUY</a>
+        </p>
+        
+        </div>
+        </div>
+        </div>` 
+        
         
     }
+ function filters(material) {
+      container.innerHTML = ''
+      let filter = mirrors.filter(function (items) {
+
+        return items.materialType.toLowerCase().includes(material.toLowerCase())
+      })
+      for (let i = 0; i < filter.length; i++) {
+        container.innerHTML +=`<div class="col-6 col-lg-3" id="card">
+        <div class="card text-left">
+        <img class="card-img-top" src="${filter[i].image}" alt="">
+        <div class="card-body">
+        <h4 class="card-title fs-6">${filter[i].name}</h4>
+        <p class="card-text text-dark fs-6">Rs. <b>${filter[i].price}</b>
+        
+        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${filter[i].id}" role="button">BUY</a>
+        </p>
+        
+        </div>
+        </div>
+        </div>`}
 
 
-let form1=document.getElementById('mirrorform')
-let select1=document.getElementById('mirrorselect')
-form1.addEventListener('submit',function(){})
 
-let form2=document.getElementById('materialform')
-let select2=document.getElementById('materialselect')
-form2.addEventListener('submit',function(){
-    
+
+    }
+
+     function filters2(material2) {
+      container.innerHTML = ''
+      let filter2 = mirrors.filter(function (items2) {
+
+        return items2.mirrorType.toLowerCase().includes(material2.toLowerCase())
+      })
+      for (let i = 0; i < filter2.length; i++) {
+        container.innerHTML +=`<div class="col-6 col-lg-3" id="card">
+        <div class="card text-left">
+        <img class="card-img-top" src="${filter2[i].image}" alt="">
+        <div class="card-body">
+        <h4 class="card-title fs-6">${filter2[i].name}</h4>
+        <p class="card-text text-dark fs-6">Rs. <b>${filter2[i].price}</b>
+        
+        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${filter2[i].id}" role="button">BUY</a>
+        </p>
+        
+        </div>
+        </div>
+        </div>`}
+      }
+
+let form1=document.getElementById('form1')
+let select1=document.getElementById('select1')
+form1.addEventListener('submit',function(e){
+    e.preventDefault()
+    console.log(select1.value)
+    filters(select1.value)
+})
+let form2=document.getElementById('form2')
+let select2=document.getElementById('select2')
+form2.addEventListener('submit',function(e){
+    e.preventDefault()
+filters2(select2.value)
 })
 
-function filter1(){
-    
-}
-function filter2(){}
