@@ -59,8 +59,17 @@ container.innerHTML=` <div class="col-md-3">
                 <p><b>Material Type: </b>${singleproduct.materialType}</p>
                 <p><b>Mirror Type: </b>${singleproduct.mirrorType}</p>
                 <button class="btn btn-primary btn-lg">Add to Cart</button>
-                <button class="btn btn-primary btn-lg">Download</button>
+                <button onclick="download()" class="btn btn-primary btn-lg">Download</button>
 
             </div>`
 
             //display products similiar products based on category of current  products displayed on the detail page 
+
+
+
+  function download(){
+    html2pdf().from(container).save('abc.pdf');
+
+  }  
+
+
