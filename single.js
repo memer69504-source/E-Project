@@ -449,8 +449,28 @@ container.innerHTML = ` <div class="col-md-3">
                 <p>${singleproduct.description}</p>
                 <p><b>Material Type: </b>${singleproduct.materialType}</p>
                 <p><b>Mirror Type: </b>${singleproduct.mirrorType}</p>
+                <label for="size">Size:</label>
+                <select name="size" id="size">
+        <option value="" id="" class=''>${singleproduct.sizes[0]}</option>
+        <option value="" id="">${singleproduct.sizes[1]}</option>
+    </select>
+                <label for="Color">Color:</label>
+                <select name="size" id="Color">
+        <option value="" id="" class=''>${singleproduct.colors[0]}</option>
+        <option value="" id="">${singleproduct.colors[1]}</option>
+
+    </select>
+                <h3>Quantity</h3>
+                <div class="qty-container my-3">
+                <button class="qty-btn" id="dec">−</button>
+                <input type="text" id="qty" class="qty-value" value="1" readonly>
+                <button class="qty-btn" id="inc">+</button>
+                </div>
+                <div>
                 <button class="btn btn-warning btn-lg">Buy</button>
                 <button onclick="download()" class="btn btn-warning btn-lg">Download Info</button>
+                </div>
+
 
             </div>`
 
@@ -464,3 +484,17 @@ function download() {
 }
 
 
+let qtyInput = document.getElementById("qty")
+let count = 1
+
+document.getElementById("inc").addEventListener("click", () => {
+    count++
+    qtyInput.value = count
+})
+
+document.getElementById("dec").addEventListener("click", () => {
+    if (count > 1) {
+        count--
+        qtyInput.value = count
+    }
+})
