@@ -460,19 +460,8 @@ container.innerHTML = ` <div class="col-md-3">
         <option value="" id="">${singleproduct.colors[1]}</option>
 
     </select>
-                <h3>Quantity</h3>
-                <div class="qty-container my-3">
-                <button class="qty-btn" id="dec">−</button>
-                <input type="text" id="qty" class="qty-value" value="1" readonly>
-                <button class="qty-btn" id="inc">+</button>
                 </div>
-                <div>
-                <button class="btn btn-warning btn-lg">Buy</button>
-                <button onclick="download()" class="btn btn-warning btn-lg">Download Info</button>
-                </div>
-
-
-            </div>`
+            `
 
 //display products similiar products based on category of current  products displayed on the detail page 
 

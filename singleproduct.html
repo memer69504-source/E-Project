@@ -45,10 +45,7 @@
                         <a class="nav-link" href="./FeedBack.html">Feedback</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-warning" type="submit">Search</button>
-                </form>
+               
             </div>
         </div>
     </nav>
@@ -58,7 +55,21 @@
         <div class="row" id="detail">
 
         </div>
+        <div class="row">
+            <div class="col-md-3">
 
+            </div>
+            <div class="col-md-9 d-flex g-2 p-2">
+                <div class="d-inline-flex ">
+                    <h4 class="">Quantity:</h4>
+                    <button class="btn btn-warning btn-lg mx-2" id="dec">−</button>
+                    <input type="text" id="qty" class="qty-value" value="1" readonly>
+                    <button class="btn btn-warning btn-lg mx-2" id="inc">+</button>
+                </div>
+                <button class="btn btn-warning btn-lg mx-2">Buy</button>
+                <button onclick="download()" class="btn btn-warning btn-lg">Download Info</button>
+            </div>
+        </div>
     </div>
     <div id="footer">
 
@@ -94,7 +105,7 @@
         </footer>
 
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
