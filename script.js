@@ -493,6 +493,28 @@ let mirrorsWithRatings = mirrors.map(item => ({
         </div>
         </div>`}
       }
+       function filters3(material3) {
+      container.innerHTML = ''
+      let filter3 = mirrors.filter(function (items3) {
+
+        return items3.name.toLowerCase().includes(material3.toLowerCase())
+      })
+      for (let i = 0; i < filter3.length; i++) {
+        container.innerHTML +=`<div class="col-6 col-lg-3" id="card">
+        <div class="card text-left">
+        <img class="card-img-top" src="${filter3[i].image}" alt="">
+        <div class="card-body">
+        <h4 class="card-title fs-6">${filter3[i].name}</h4>
+        <p class="card-text text-dark fs-6">Rs. <b>${filter3[i].price}</b>
+        
+        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${filter3[i].id}" role="button">BUY</a>
+        </p>
+        
+        </div>
+        </div>
+        </div>`}
+      }
+
 
 let form1=document.getElementById('form1')
 let select1=document.getElementById('select1')
@@ -508,3 +530,11 @@ form2.addEventListener('submit',function(e){
 filters2(select2.value)
 })
 
+let form3=document.getElementById('form3')
+let input3=document.getElementById('input3')
+
+form3.addEventListener('submit', function(l){
+    l.preventDefault()
+    filters3(input3.value)
+    console.log(input3.value)
+})
