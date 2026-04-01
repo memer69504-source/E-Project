@@ -426,10 +426,13 @@ Reflects elegance and brightness.`,
     }
 ];
 let singleproduct = mirrors.find(function (items) {
-    return items.id == productId
+    return items.id ==productId
 })
 
 let container = document.getElementById('detail')
+if (!singleproduct) {
+    container.innerHTML = "<h2>Product not found</h2>";
+} else {
 container.innerHTML = ` <div class="col-md-3">
                 <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -460,9 +463,8 @@ container.innerHTML = ` <div class="col-md-3">
         <option value="" id="">${singleproduct.colors[1]}</option>
 
     </select>
-                </div>
-            `
-
+                </div> `
+}
 //display products similiar products based on category of current  products displayed on the detail page 
 
 
@@ -487,3 +489,5 @@ document.getElementById("dec").addEventListener("click", () => {
         qtyInput.value = count
     }
 })
+
+let container2=document.getElementById('detail2');
