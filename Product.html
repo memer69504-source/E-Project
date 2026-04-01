@@ -56,19 +56,20 @@
             </div>
         </div>
     </nav>
+
+    <!-- //product carouseel on top -->
+
     <div class="container">
 
         <div class="container py-5">
             <div class="row align-items-center justify-content-between g-3">
 
-                <div class="col-md-4">
-                    <h1 class="mb-0">Products</h1>
-
-                    <div class="search-container">
-                        <input type="text" class="form-control search-input" placeholder="Search...">
-                        <i class="fas fa-search search-icon"></i>
+                <div class="col-md-4 d-flex align-items-center g-2 p-1">
+                    <div class="search-container d-flex align-items-center">
+                        <label for="" class="mx-2">Search:</label>
+                        <input type="text" class="form-control search-input" placeholder="Search" id="search">
+                        <i class="fas fa-search search-icon d-inline fs-5 mx-1"></i>
                     </div>
-
                 </div>
 
                 <div class="col-md-8 ">
@@ -76,7 +77,6 @@
 
                         <div class="col-md-5">
                             <form action="" id="form1" class="d-flex align-items-center g-5 justify-content-between">
-
                                 <label for="material" class=" mx-2" id="">Material:</label>
                                 <select class="form-select mx-1 " id="select1" class="">
                                     <option selected disabled>Select Material</option>
@@ -88,7 +88,6 @@
                                     <option>Antique</option>
                                     <option>Bluetooth</option>
                                     <option>Acrylic Bordered</option>
-
                                 </select>
                                 <button class=" btn btn-light btn-outline-dark mx-2">Go</button>
                             </form>
