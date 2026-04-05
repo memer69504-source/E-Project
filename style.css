@@ -4,6 +4,8 @@
   top: 0;
   z-index: 1000;
   padding: 1%;
+  display: flex;
+  justify-content:space-around
 }
 
 a {
@@ -141,4 +143,3 @@ max-width: fit-content;}
     .qty-btn:active {
         transform: scale(0.95);
     }
-    

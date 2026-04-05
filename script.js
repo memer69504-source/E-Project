@@ -493,6 +493,7 @@ let mirrorsWithRatings = mirrors.map(item => ({
         </div>
         </div>`}
       }
+
        function filters3(material3) {
       container.innerHTML = ''
       let filter3 = mirrors.filter(function (items3) {
