@@ -500,6 +500,7 @@ let mirrorsWithRatings = mirrors.map(item => ({
 
         return items3.name.toLowerCase().includes(material3.toLowerCase())
       })
+      if(filter3.length>0){
       for (let i = 0; i < filter3.length; i++) {
         container.innerHTML +=`<div class="col-6 col-lg-3" id="card">
         <div class="card text-left">
@@ -514,7 +515,24 @@ let mirrorsWithRatings = mirrors.map(item => ({
         </div>
         </div>
         </div>`}
-      }
+      }else{container.innerHTML=`<div class="container text-center d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+  
+  <!-- Image -->
+  <img src="https://via.placeholder.com/300x200?text=No+Product" 
+       class="img-fluid mb-4" 
+       alt="Product Not Found">
+
+  <!-- Heading -->
+  <h2 class="fw-bold">Product Not Found</h2>
+
+  <!-- Message -->
+  <p class="text-muted">Sorry, the product you are looking for does not exist or has been removed.</p>
+
+  <!-- Button -->
+  <a href="#" class="btn btn-primary mt-3">Back to Shop</a>
+
+</div>`}}
+      
 
 
 let form1=document.getElementById('form1')
