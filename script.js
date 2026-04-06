@@ -517,18 +517,12 @@ let mirrorsWithRatings = mirrors.map(item => ({
         </div>`}
       }else{container.innerHTML=`<div class="container text-center d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
   
-  <!-- Image -->
-  <img src="https://via.placeholder.com/300x200?text=No+Product" 
+  <img src="https://freshmeat.com.pk/public/frontend/default/assets/img/no-data-found.png?v=v4.4.0" 
        class="img-fluid mb-4" 
-       alt="Product Not Found">
-
-  <!-- Heading -->
-  <h2 class="fw-bold">Product Not Found</h2>
-
-  <!-- Message -->
+       alt="">
   <p class="text-muted">Sorry, the product you are looking for does not exist or has been removed.</p>
 
-  <!-- Button -->
+  
   <a href="./Product.html" class="btn btn-primary mt-3">Back to Shop</a>
 
 </div>`}}

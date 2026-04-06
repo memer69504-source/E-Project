@@ -54,21 +54,30 @@
         <div class="row" id="detail">
 
         </div>
-        <div class="row">
-            <div class="col-md-3">
+        <div class="row align-items-center">
+    <div class="col-md-3 col-12 mb-2 mb-md-0">
+       
+    </div>
 
-            </div>
-            <div class="col-md-9 d-flex g-2 p-2">
-                <div class="d-inline-flex ">
-                    <h4 class="">Quantity:</h4>
-                    <button class="btn btn-warning btn-lg ml-2" id="dec">−</button>
-                    <input type="text" id="qty" class="qty-value border border-black opacity-75" value="1" readonly>
-                    <button class="btn btn-warning btn-lg mr-2" id="inc">+</button>
-                </div>
-                <button class="btn btn-warning btn-lg mx-2">Buy</button>
-                <button onclick="download()" class="btn btn-warning btn-lg">Download Info</button>
-            </div>
+    <div class="col-md-9 col-12 d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2 p-2">
+
+               <div class="d-flex align-items-center flex-wrap gap-2">
+            <h5 class="mb-0">Quantity:</h5>
+            <button class="btn btn-warning btn-lg" id="dec">−</button>
+            <input type="text" id="qty" 
+                   class="qty-value border border-dark text-center" 
+                   value="1" readonly style="width:70px;">
+            <button class="btn btn-warning btn-lg" id="inc">+</button>
         </div>
+
+        
+        <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-warning btn-lg">Buy</button>
+            <button onclick="download()" class="btn btn-warning">Download Info</button>
+        </div>
+
+    </div>
+</div>
     </div>
     <div id="footer">
 
