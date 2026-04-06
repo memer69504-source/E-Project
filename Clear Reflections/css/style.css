@@ -207,3 +207,12 @@ max-width: fit-content;}
 .fade-in-down {
   animation: fadeInDown 0.6s ease-out forwards;
 }
+.accordion-button:not(.collapsed) {
+    background-color: #ffc107 !important; /* Bootstrap warning yellow */
+    color: #000; /* text color */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #ffc107;
+}
