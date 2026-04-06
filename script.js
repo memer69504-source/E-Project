@@ -529,7 +529,7 @@ let mirrorsWithRatings = mirrors.map(item => ({
   <p class="text-muted">Sorry, the product you are looking for does not exist or has been removed.</p>
 
   <!-- Button -->
-  <a href="#" class="btn btn-primary mt-3">Back to Shop</a>
+  <a href="./Product.html" class="btn btn-primary mt-3">Back to Shop</a>
 
 </div>`}}
       

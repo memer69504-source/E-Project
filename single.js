@@ -439,6 +439,14 @@ container.innerHTML = ` <div class="col-md-3">
                         <div class="carousel-item active">
                             <img src="${singleproduct.image}" class="d-block w-100 img-fluid" alt="Product Image 1">
                         </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+    
+                        
                     </div>
 
                 </div>
