@@ -473,8 +473,6 @@ container.innerHTML = ` <div class="col-md-3">
     </select>
                 </div> `
 }
-//display products similiar products based on category of current  products displayed on the detail page 
-
 
 
 function download() {
@@ -497,5 +495,24 @@ document.getElementById("dec").addEventListener("click", () => {
         qtyInput.value = count
     }
 })
+const currentMirror =mirrors.find(m =>m.id== productId);
 
-let container2=document.getElementById('detail2');
+        const similarMirrors=mirrors.filter(m=> m.mirrorType===currentMirror.mirrorType &&m.id !==currentMirror.id).slice(0,4);
+
+        const similarcontainer=document.getElementById('similiarprod')
+        similarMirrors.forEach(item => {
+            similarcontainer.innerHTML += `
+                <div class="col-6 col-sm-5 g-3 col-lg-3">
+                    <a href="./single.html?id=${item.id}" class="card-link text-decoration-none">
+                        <div class="card text-left h-100">
+                            <img class="card-img-top" src="${item.image}" alt="${item.name}" style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title fs-4 text-dark">${item.name}</h4>
+                                <p class="card-text text-dark fs-5">Rs. <b>${item.price.toLocaleString()}</b></p>
+                                <p class="card-text text-muted fs-6 text-truncate">${item.description}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            `;
+        });

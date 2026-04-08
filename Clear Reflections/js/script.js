@@ -422,10 +422,9 @@ Reflects elegance and brightness.`,
         image: "https://images.unsplash.com/photo-1571508601891-ca5e7a713859?w=500&h=500&fit=crop"
     }
 ];
-let mirrorsWithRatings = mirrors.map(item => ({
-    ...item,
-    rating: 4.5
-}));
+
+function reset(e){
+    container.innerHTML="";
 
   for(let i = 0; i <mirrors.length;i++){
 
@@ -445,7 +444,8 @@ let mirrorsWithRatings = mirrors.map(item => ({
         </div>` 
         
         
-    }
+    }}
+    reset()
  function filters(material) {
       container.innerHTML = ''
       let filter = mirrors.filter(function (items) {
