@@ -508,7 +508,7 @@ const currentMirror =mirrors.find(m =>m.id== productId);
         similarMirrors.forEach(item => {
             similarcontainer.innerHTML += `
                 <div class="col-6 col-sm-5 g-3 col-lg-3">
-                    <a href="./single.html?id=${item.id}" class="card-link text-decoration-none">
+<a href="/Clear Reflections/Pages/singleproduct.html?id=${item.id}" class="card-link text-decoration-none">
                         <div class="card text-left h-100">
                             <img class="card-img-top" src="${item.image}" alt="${item.name}" style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
                             <div class="card-body">
