@@ -12,7 +12,7 @@ Enhances natural light and creates a spacious feel.
 Perfect for classic and modern living rooms.`,
         sizes: ["24x36 inches", "30x40 inches"],
         colors: ["Oak Brown", "Dark Walnut"],
-        image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=500&h=500&fit=crop"
+        image: ""
     },
     {
         id: 2,
