@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(querystring);
 let productId = urlParams.get('id')
 console.log(productId)
 let mirrors = [
-   {
+    {
         id: 1,
         name: "Regal Oak Reflection",
         price: 8500,
@@ -31,7 +31,9 @@ Provides clear visibility for grooming and makeup.
 Energy-efficient with sleek minimal design.`,
         sizes: ["20x30 inches", "24x36 inches"],
         colors: ["Cool White", "Warm White"],
-        image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/LED/led1.jpg",
+        image2: "/Clear Reflections/img/imgs/LED/led2.jpg",
+        image3: "/Clear Reflections/img/imgs/LED/led3.jpg"
     },
     {
         id: 3,
@@ -45,7 +47,9 @@ Rust-resistant frame ensures long-term durability.
 Adds a stylish industrial touch.`,
         sizes: ["18x24 inches", "24x30 inches"],
         colors: ["Matte Black", "Silver"],
-        image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/metal/metal1.jpg",
+        image2: "/Clear Reflections/img/imgs/metal/metal2.jpg",
+        image3: "/Clear Reflections/img/imgs/metal/metal3.jpg"
     },
     {
         id: 4,
@@ -59,7 +63,9 @@ Perfect for statement walls and premium interiors.
 Adds elegance and brightness instantly.`,
         sizes: ["30x40 inches", "36x48 inches"],
         colors: ["Gold", "Champagne"],
-        image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/decor/decor1.jpg",
+        image2: "/Clear Reflections/img/imgs/decor/decor2.jpg",
+        image3: "/Clear Reflections/img/imgs/decor/decor3.jpg"
     },
     {
         id: 5,
@@ -73,7 +79,9 @@ Enhances entryway aesthetics beautifully.
 Lightweight and easy to mount.`,
         sizes: ["18 inch", "24 inch"],
         colors: ["Clear", "Smoked"],
-        image: "https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/frameless/frameless1.jpg",
+        image2: "/Clear Reflections/img/imgs/frameless/frameless2.jpg",
+        image3: "/Clear Reflections/img/imgs/frameless/frameless3.jpg"
     },
     {
         id: 6,
@@ -87,7 +95,9 @@ Perfect for dining areas with classic decor.
 Creates a warm vintage ambiance.`,
         sizes: ["32x42 inches", "36x50 inches"],
         colors: ["Antique Gold", "Bronze"],
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/antique/antique1.jpg",
+        image2: "/Clear Reflections/img/imgs/antique/antique2.jpg",
+        image3: "/Clear Reflections/img/imgs/antique/antique3.jpg"
     },
     {
         id: 7,
@@ -101,7 +111,9 @@ Anti-fog and touch sensor technology included.
 Ideal for modern luxury bathrooms.`,
         sizes: ["24x36 inches", "30x40 inches"],
         colors: ["Black", "LED Blue"],
-        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/bluetooth/bluetooth1.jpg",
+        image2: "/Clear Reflections/img/imgs/bluetooth/bluetooth2.jpg",
+        image3: "/Clear Reflections/img/imgs/bluetooth/bluetooth3.jpg"
     },
     {
         id: 8,
@@ -115,7 +127,9 @@ Perfect for hallways and traditional interiors.
 Strong and durable craftsmanship.`,
         sizes: ["28x38 inches", "32x42 inches"],
         colors: ["Rustic Brown", "Teak"],
-        image: "https://images.unsplash.com/photo-1599619351208-3e6c839d6828?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/wooden framed 2/woodenframed2.jpg",
+        image2: "/Clear Reflections/img/imgs/wooden framed 2/woodenframed1.jpg",
+        image3: "/Clear Reflections/img/imgs/wooden framed 2/woodenframed3.jpg"
     },
     {
         id: 9,
@@ -129,7 +143,9 @@ Perfect for professional office setups.
 Lightweight and modern design.`,
         sizes: ["20x28 inches", "24x36 inches"],
         colors: ["Black", "Transparent"],
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/arcylic/arcylic1.jpg",
+        image2: "/Clear Reflections/img/imgs/arcylic/arcylic2.jpg",
+        image3: "/Clear Reflections/img/imgs/arcylic/arcylic3.jpg"
     },
     {
         id: 10,
@@ -143,7 +159,9 @@ Enhances brightness and luxury feel.
 Perfect centerpiece for living rooms.`,
         sizes: ["30x40 inches", "36x48 inches"],
         colors: ["Crystal Silver", "Gloss White"],
-        image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/decor2/decor1.jpg",
+        image2: "/Clear Reflections/img/imgs/decor2/decor2.jpg",
+        image3: "/Clear Reflections/img/imgs/decor2/decor3.jpg"
     },
 
     {
@@ -158,7 +176,9 @@ Sleek design with modern aesthetics.
 Easy wall mounting.`,
         sizes: ["22x30 inches", "26x34 inches"],
         colors: ["Black", "Gunmetal"],
-        image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/metal2/metal1.jpg",
+        image2: "/Clear Reflections/img/imgs/metal2/metal2.jpg",
+        image3: "/Clear Reflections/img/imgs/metal2/metal3.jpg"
     },
     {
         id: 12,
@@ -172,7 +192,9 @@ Energy saving and stylish.
 Ideal for premium bathrooms.`,
         sizes: ["24x36 inches", "28x40 inches"],
         colors: ["Cool White", "Neutral White"],
-        image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/LED2/led1.jpg",
+        image2: "/Clear Reflections/img/imgs/LED2/led2.jpg",
+        image3: "/Clear Reflections/img/imgs/LED3/led1.jpg"
     },
     {
         id: 13,
@@ -186,8 +208,10 @@ Provides clean and clear reflections.
 Durable and scratch resistant.`,
         sizes: ["20x30 inches", "24x36 inches"],
         colors: ["Clear"],
-        image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&h=500&fit=crop"
-    },
+     image: "/Clear Reflections/img/imgs/frameless2/frameless1.jpg",
+        image2: "/Clear Reflections/img/imgs/frameless2/frameless2.jpg",
+        image3: "/Clear Reflections/img/imgs/frameless2/frameless3.jpg"
+     },
     {
         id: 14,
         name: "Royal Antique Grande Mirror",
@@ -200,7 +224,9 @@ Perfect for grand interiors.
 Adds timeless elegance.`,
         sizes: ["36x48 inches", "40x60 inches"],
         colors: ["Gold", "Bronze"],
-        image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/antique2/antique1.jpg",
+        image2: "/Clear Reflections/img/imgs/antique2/antique2",
+        image3: "/Clear Reflections/img/imgs/antique2/antique3.jpg"
     },
     {
         id: 15,
@@ -214,7 +240,9 @@ Enhances entrance decor beautifully.
 Stylish and lightweight.`,
         sizes: ["20 inch", "26 inch"],
         colors: ["White", "Black"],
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/arcylic2/arcylic1.jpg",
+        image2: "/Clear Reflections/img/imgs/arcylic2/arcylic2.jpg",
+        image3: "/Clear Reflections/img/imgs/arcylic2/arcylic3.jpg"
     },
     {
         id: 16,
@@ -228,7 +256,9 @@ Enhances lighting and creates a welcoming atmosphere.
 Premium finish with long-lasting durability.`,
         sizes: ["28x38 inches", "32x44 inches"],
         colors: ["Gold", "Ivory"],
-        image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/decor3/decor1.jpg",
+        image2: "/Clear Reflections/img/imgs/decor3/decor2.jpg",
+        image3: "/Clear Reflections/img/imgs/decor3/decor3.jpg"
     },
     {
         id: 17,
@@ -242,7 +272,9 @@ Anti-fog technology for clear reflection.
 Perfect for modern smart homes.`,
         sizes: ["30x40 inches", "36x48 inches"],
         colors: ["Black", "Blue LED"],
-        image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/bluetooth2/bluetooth1.jpg",
+        image2: "/Clear Reflections/img/imgs/bluetooth2/bluetooth2.jpg",
+        image3: "/Clear Reflections/img/imgs/bluetooth2/bluetooth3.jpg"
     },
     {
         id: 18,
@@ -256,36 +288,42 @@ Wooden craftsmanship with timeless design.
 Adds charm to traditional interiors.`,
         sizes: ["26x36 inches", "30x42 inches"],
         colors: ["Teak", "Brown"],
-        image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/wooden framed 3/woodenframed1.jpg",
+        image2: "/Clear Reflections/img/imgs/wooden framed 3/woodenframed2.jpg",
+        image3: "/Clear Reflections/img/imgs/wooden framed 3/woodenframed3.jpg"
     },
     {
         id: 19,
         name: "Office Minimal Pro Mirror",
         price: 9900,
         currency: "PKR",
-        materialType: "Metal Bordered",
+        materialType: "Frameless",
         mirrorType: "Office Mirror",
         description: `Professional office mirror with minimal design.
 Strong metal frame for durability.
 Perfect for corporate environments.`,
         sizes: ["22x30 inches", "26x36 inches"],
         colors: ["Black", "Grey"],
-        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/frameless2/frameless1.jpg",
+        image2: "/Clear Reflections/img/imgs/frameless2/frameless2.jpg",
+        image3: "/Clear Reflections/img/imgs/frameless2/frameless3.jpg"
     },
     {
         id: 20,
-        name: "Crystal Bright Decor Mirror",
+        name: "Crystal Bright Frameless Mirror",
         price: 17400,
         currency: "PKR",
-        materialType: "Decorative",
+        materialType: "Frameless",
         mirrorType: "Living Room Mirror",
         description: `Crystal-inspired mirror with bright reflections.
 Adds elegance and modern luxury.
 Ideal for stylish living rooms.`,
         sizes: ["30x40 inches", "34x46 inches"],
         colors: ["Crystal", "Silver"],
-        image: "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=500&h=500&fit=crop"
-    },
+        image: "/Clear Reflections/img/imgs/frameless3/frameless.jpg",
+        image2: "/Clear Reflections/img/imgs/frameless3/frameless2.jpg",
+        image3: "/Clear Reflections/img/imgs/frameless3/frameless3.jpg",
+     },
     {
         id: 21,
         name: "WoodCraft Bedroom Mirror",
@@ -298,7 +336,9 @@ Strong frame with smooth finishing.
 Blends with modern and classic decor.`,
         sizes: ["20x28 inches", "24x32 inches"],
         colors: ["Walnut", "Brown"],
-        image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/wooden framed 4/woodenframed1.jpg",
+        image2: "/Clear Reflections/img/imgs/wooden framed 4/woodenframed2.jpg",
+        image3: "/Clear Reflections/img/imgs/wooden framed 4/woodenframed3.jpg"
     },
     {
         id: 22,
@@ -312,7 +352,9 @@ Energy efficient and stylish design.
 Perfect for grooming and makeup.`,
         sizes: ["24x36 inches", "30x42 inches"],
         colors: ["Cool White", "Soft White"],
-        image: "https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/wooden framed 5/woodenframed1.jpg",
+        image2: "/Clear Reflections/img/imgs/wooden framed 5/woodenframed2.jpg",
+        image3: "/Clear Reflections/img/imgs/wooden framed 5/woodenframed3.jpg"
     },
     {
         id: 23,
@@ -326,7 +368,9 @@ Clear reflection with modern style.
 Scratch resistant surface.`,
         sizes: ["22x30 inches", "26x36 inches"],
         colors: ["Clear"],
-        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/LED3/led2.jpg",
+        image2: "/Clear Reflections/img/imgs/LED3/pexels-artbovich-7750122.jpg",
+        image3: "/Clear Reflections/img/imgs/LED2/pexels-artbovich-6980732.jpg"
     },
     {
         id: 24,
@@ -340,7 +384,9 @@ Intricate detailing with premium finish.
 Enhances royal interiors.`,
         sizes: ["34x46 inches", "38x52 inches"],
         colors: ["Gold", "Bronze"],
-        image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/antique3/antique1.jpg",
+        image2: "/Clear Reflections/img/imgs/antique3/antique2.jpg",
+        image3: "/Clear Reflections/img/imgs/antique3/antique3.jpg"
     },
     {
         id: 25,
@@ -354,78 +400,11 @@ Perfect for modern entryways.
 Lightweight and easy installation.`,
         sizes: ["22 inch", "28 inch"],
         colors: ["White", "Black"],
-        image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/arcylic3/arcylic1.jpg",
+        image2: "/Clear Reflections/img/imgs/arcylic3/arcylic2.jpg",
+        image3: "/Clear Reflections/img/imgs/arcylic3/arcylic3.jpg"
     },
-    {
-        id: 26,
-        name: "Premium Dining Reflector",
-        price: 15800,
-        currency: "PKR",
-        materialType: "Decorative",
-        mirrorType: "Dining Room Mirror",
-        description: `Premium decorative mirror for dining areas.
-Enhances ambiance and lighting.
-Durable and stylish design.`,
-        sizes: ["30x40 inches", "34x44 inches"],
-        colors: ["Ivory", "Gold"],
-        image: "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=500&h=500&fit=crop"
-    },
-    {
-        id: 27,
-        name: "Smart Vision Bluetooth Mirror",
-        price: 27000,
-        currency: "PKR",
-        materialType: "Bluetooth",
-        mirrorType: "Bathroom Mirror",
-        description: `Luxury smart mirror with Bluetooth features.
-Touch controls and anti-fog functionality.
-Perfect for futuristic bathrooms.`,
-        sizes: ["30x44 inches", "36x50 inches"],
-        colors: ["Black", "Blue LED"],
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=500&h=500&fit=crop"
-    },
-    {
-        id: 28,
-        name: "Heritage Wall Classic Mirror",
-        price: 11800,
-        currency: "PKR",
-        materialType: "Wooden Framed",
-        mirrorType: "Hallway Mirror",
-        description: `Heritage style wooden mirror for walls.
-Timeless design with durable frame.
-Perfect for classic homes.`,
-        sizes: ["26x36 inches", "30x40 inches"],
-        colors: ["Teak", "Dark Brown"],
-        image: "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=500&h=500&fit=crop"
-    },
-    {
-        id: 29,
-        name: "Office Edge Plus Mirror",
-        price: 9200,
-        currency: "PKR",
-        materialType: "Metal Bordered",
-        mirrorType: "Office Mirror",
-        description: `Modern office mirror with sleek edges.
-Minimal and professional look.
-Built with strong metal frame.`,
-        sizes: ["22x30 inches", "26x34 inches"],
-        colors: ["Black", "Silver"],
-        image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=500&h=500&fit=crop"
-    },
-    {
-        id: 30,
-        name: "Crystal Grand Luxe Mirror",
-        price: 19900,
-        currency: "PKR",
-        materialType: "Decorative",
-        mirrorType: "Living Room Mirror",
-        description: `Grand crystal mirror with luxury finish.
-Perfect for premium interiors.
-Reflects elegance and brightness.`,
-        sizes: ["34x46 inches", "38x50 inches"],
-        colors: ["Crystal", "Gloss White"],
-        image: "https://images.unsplash.com/photo-1571508601891-ca5e7a713859?w=500&h=500&fit=crop"
-    }
+
 ];
 let singleproduct = mirrors.find(function (items) {
     return items.id == productId
