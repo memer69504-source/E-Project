@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(querystring);
 let productId = urlParams.get('id')
 console.log(productId)
 let mirrors = [
-    {
+   {
         id: 1,
         name: "Regal Oak Reflection",
         price: 8500,
@@ -15,7 +15,9 @@ Enhances natural light and creates a spacious feel.
 Perfect for classic and modern living rooms.`,
         sizes: ["24x36 inches", "30x40 inches"],
         colors: ["Oak Brown", "Dark Walnut"],
-        image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=500&h=500&fit=crop"
+        image: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed1.jpg",
+        image2: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed2.jpg",
+        image3: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed3.jpg"
     },
     {
         id: 2,
@@ -433,17 +435,17 @@ let container = document.getElementById('detail')
 if (!singleproduct) {
     container.innerHTML = "<h2>Product not found</h2>";
 } else {
-    container.innerHTML = ` <div class="col-md-3">
+    container.innerHTML = ` <div class="col-md-4">
           <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="${singleproduct.image}" class="d-block w-100" alt="...">
+      <img src="${singleproduct.image}" class="d-block w-100" alt="..." style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="${singleproduct.image2}" class="d-block w-100" alt="..." style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="${singleproduct.image3}" class="d-block w-100" alt="..." style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -456,7 +458,7 @@ if (!singleproduct) {
   </button>
 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <h1>${singleproduct.name}</h1>
                 <div class="mb-3">
                     <span class="badge bg-success">In Stock</span>

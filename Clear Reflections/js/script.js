@@ -12,7 +12,9 @@ Enhances natural light and creates a spacious feel.
 Perfect for classic and modern living rooms.`,
         sizes: ["24x36 inches", "30x40 inches"],
         colors: ["Oak Brown", "Dark Walnut"],
-        image: ""
+        image: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed1.jpg",
+        image2: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed2.jpg",
+        image3: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed3.jpg"
     },
     {
         id: 2,
@@ -431,7 +433,7 @@ function reset(e){
 
         container.innerHTML+=`<div class="col-6 col-lg-3" id="card">
         <div class="card text-left">
-        <img class="card-img-top" src="${mirrors[i].image}" alt="">
+        <img class="card-img-top" src="${mirrors[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
         <div class="card-body">
         <h4 class="card-title fs-6">${mirrors[i].name}</h4>
         <p class="card-text text-dark fs-6">Rs. <b>${mirrors[i].price}</b>
@@ -455,7 +457,7 @@ function reset(e){
       for (let i = 0; i < filter.length; i++) {
         container.innerHTML +=`<div class="col-6 col-lg-3" id="card">
         <div class="card text-left">
-        <img class="card-img-top" src="${filter[i].image}" alt="">
+        <img class="card-img-top" src="${filter[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
         <div class="card-body">
         <h4 class="card-title fs-6">${filter[i].name}</h4>
         <p class="card-text text-dark fs-6">Rs. <b>${filter[i].price}</b>
@@ -481,7 +483,7 @@ function reset(e){
       for (let i = 0; i < filter2.length; i++) {
         container.innerHTML +=`<div class="col-6 col-lg-3" id="card">
         <div class="card text-left">
-        <img class="card-img-top" src="${filter2[i].image}" alt="">
+        <img class="card-img-top" src="${filter2[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
         <div class="card-body">
         <h4 class="card-title fs-6">${filter2[i].name}</h4>
         <p class="card-text text-dark fs-6">Rs. <b>${filter2[i].price}</b>
@@ -504,7 +506,7 @@ function reset(e){
       for (let i = 0; i < filter3.length; i++) {
         container.innerHTML +=`<div class="col-6 col-lg-3" id="card">
         <div class="card text-left">
-        <img class="card-img-top" src="${filter3[i].image}" alt="">
+        <img class="card-img-top" src="${filter3[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
         <div class="card-body">
         <h4 class="card-title fs-6">${filter3[i].name}</h4>
         <p class="card-text text-dark fs-6">Rs. <b>${filter3[i].price}</b>
