@@ -1,4 +1,7 @@
-let container = document.getElementById('products')
+const querystring = window.location.search;
+const urlParams = new URLSearchParams(querystring);
+let productId = urlParams.get('id')
+console.log(productId)
 let mirrors = [
     {
         id: 1,
@@ -12,9 +15,9 @@ Enhances natural light and creates a spacious feel.
 Perfect for classic and modern living rooms.`,
         sizes: ["24x36 inches", "30x40 inches"],
         colors: ["Oak Brown", "Dark Walnut"],
-        image: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed1.jpg",
-        image2: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed2.jpg",
-        image3: "/Clear Reflections/img/imgs/wooden framed 1/woodenframed3.jpg"
+        image: "/img/imgs/wooden framed 1/woodenframed1.jpg",
+        image2: "/img/imgs/wooden framed 1/woodenframed2.jpg",
+        image3: "/img/imgs/wooden framed 1/woodenframed3.jpg"
     },
     {
         id: 2,
@@ -28,9 +31,9 @@ Provides clear visibility for grooming and makeup.
 Energy-efficient with sleek minimal design.`,
         sizes: ["20x30 inches", "24x36 inches"],
         colors: ["Cool White", "Warm White"],
-        image: "/Clear Reflections/img/imgs/LED/led1.jpg",
-        image2: "/Clear Reflections/img/imgs/LED/led2.jpg",
-        image3: "/Clear Reflections/img/imgs/LED/led3.jpg"
+        image: "/img/imgs/LED/led1.jpg",
+        image2: "/img/imgs/LED/led2.jpg",
+        image3: "/img/imgs/LED/led3.jpg"
     },
     {
         id: 3,
@@ -44,9 +47,9 @@ Rust-resistant frame ensures long-term durability.
 Adds a stylish industrial touch.`,
         sizes: ["18x24 inches", "24x30 inches"],
         colors: ["Matte Black", "Silver"],
-        image: "/Clear Reflections/img/imgs/metal/metal1.jpg",
-        image2: "/Clear Reflections/img/imgs/metal/metal2.jpg",
-        image3: "/Clear Reflections/img/imgs/metal/metal3.jpg"
+        image: "/img/imgs/metal/metal1.jpg",
+        image2: "/img/imgs/metal/metal2.jpg",
+        image3: "/img/imgs/metal/metal3.jpg"
     },
     {
         id: 4,
@@ -60,9 +63,9 @@ Perfect for statement walls and premium interiors.
 Adds elegance and brightness instantly.`,
         sizes: ["30x40 inches", "36x48 inches"],
         colors: ["Gold", "Champagne"],
-        image: "/Clear Reflections/img/imgs/decor/decor1.jpg",
-        image2: "/Clear Reflections/img/imgs/decor/decor2.jpg",
-        image3: "/Clear Reflections/img/imgs/decor/decor3.jpg"
+        image: "/img/imgs/decor/decor1.jpg",
+        image2: "/img/imgs/decor/decor2.jpg",
+        image3: "/img/imgs/decor/decor3.jpg"
     },
     {
         id: 5,
@@ -76,9 +79,9 @@ Enhances entryway aesthetics beautifully.
 Lightweight and easy to mount.`,
         sizes: ["18 inch", "24 inch"],
         colors: ["Clear", "Smoked"],
-        image: "/Clear Reflections/img/imgs/frameless/frameless1.jpg",
-        image2: "/Clear Reflections/img/imgs/frameless/frameless2.jpg",
-        image3: "/Clear Reflections/img/imgs/frameless/frameless3.jpg"
+        image: "/img/imgs/frameless/frameless1.jpg",
+        image2: "/img/imgs/frameless/frameless2.jpg",
+        image3: "/img/imgs/frameless/frameless3.jpg"
     },
     {
         id: 6,
@@ -92,9 +95,9 @@ Perfect for dining areas with classic decor.
 Creates a warm vintage ambiance.`,
         sizes: ["32x42 inches", "36x50 inches"],
         colors: ["Antique Gold", "Bronze"],
-        image: "/Clear Reflections/img/imgs/antique/antique1.jpg",
-        image2: "/Clear Reflections/img/imgs/antique/antique2.jpg",
-        image3: "/Clear Reflections/img/imgs/antique/antique3.jpg"
+        image: "/img/imgs/antique/antique1.jpg",
+        image2: "/img/imgs/antique/antique2.jpg",
+        image3: "/img/imgs/antique/antique3.jpg"
     },
     {
         id: 7,
@@ -108,9 +111,9 @@ Anti-fog and touch sensor technology included.
 Ideal for modern luxury bathrooms.`,
         sizes: ["24x36 inches", "30x40 inches"],
         colors: ["Black", "LED Blue"],
-        image: "/Clear Reflections/img/imgs/bluetooth/bluetooth1.jpg",
-        image2: "/Clear Reflections/img/imgs/bluetooth/bluetooth2.jpg",
-        image3: "/Clear Reflections/img/imgs/bluetooth/bluetooth3.jpg"
+        image: "/img/imgs/bluetooth/bluetooth1.jpg",
+        image2: "/img/imgs/bluetooth/bluetooth2.jpg",
+        image3: "/img/imgs/bluetooth/bluetooth3.jpg"
     },
     {
         id: 8,
@@ -124,9 +127,9 @@ Perfect for hallways and traditional interiors.
 Strong and durable craftsmanship.`,
         sizes: ["28x38 inches", "32x42 inches"],
         colors: ["Rustic Brown", "Teak"],
-        image: "/Clear Reflections/img/imgs/wooden framed 2/woodenframed2.jpg",
-        image2: "/Clear Reflections/img/imgs/wooden framed 2/woodenframed1.jpg",
-        image3: "/Clear Reflections/img/imgs/wooden framed 2/woodenframed3.jpg"
+        image: "/img/imgs/wooden framed 2/woodenframed2.jpg",
+        image2: "/img/imgs/wooden framed 2/woodenframed1.jpg",
+        image3: "/img/imgs/wooden framed 2/woodenframed3.jpg"
     },
     {
         id: 9,
@@ -140,9 +143,9 @@ Perfect for professional office setups.
 Lightweight and modern design.`,
         sizes: ["20x28 inches", "24x36 inches"],
         colors: ["Black", "Transparent"],
-        image: "/Clear Reflections/img/imgs/arcylic/arcylic1.jpg",
-        image2: "/Clear Reflections/img/imgs/arcylic/arcylic2.jpg",
-        image3: "/Clear Reflections/img/imgs/arcylic/arcylic3.jpg"
+        image: "/img/imgs/arcylic/arcylic1.jpg",
+        image2: "/img/imgs/arcylic/arcylic2.jpg",
+        image3: "/img/imgs/arcylic/arcylic3.jpg"
     },
     {
         id: 10,
@@ -156,9 +159,9 @@ Enhances brightness and luxury feel.
 Perfect centerpiece for living rooms.`,
         sizes: ["30x40 inches", "36x48 inches"],
         colors: ["Crystal Silver", "Gloss White"],
-        image: "/Clear Reflections/img/imgs/decor2/decor1.jpg",
-        image2: "/Clear Reflections/img/imgs/decor2/decor2.jpg",
-        image3: "/Clear Reflections/img/imgs/decor2/decor3.jpg"
+        image: "/img/imgs/decor2/decor1.jpg",
+        image2: "/img/imgs/decor2/decor2.jpg",
+        image3: "/img/imgs/decor2/decor3.jpg"
     },
 
     {
@@ -173,9 +176,9 @@ Sleek design with modern aesthetics.
 Easy wall mounting.`,
         sizes: ["22x30 inches", "26x34 inches"],
         colors: ["Black", "Gunmetal"],
-        image: "/Clear Reflections/img/imgs/metal2/metal1.jpg",
-        image2: "/Clear Reflections/img/imgs/metal2/metal2.jpg",
-        image3: "/Clear Reflections/img/imgs/metal2/metal3.jpg"
+        image: "/img/imgs/metal2/metal1.jpg",
+        image2: "/img/imgs/metal2/metal2.jpg",
+        image3: "/img/imgs/metal2/metal3.jpg"
     },
     {
         id: 12,
@@ -189,9 +192,9 @@ Energy saving and stylish.
 Ideal for premium bathrooms.`,
         sizes: ["24x36 inches", "28x40 inches"],
         colors: ["Cool White", "Neutral White"],
-        image: "/Clear Reflections/img/imgs/LED2/led1.jpg",
-        image2: "/Clear Reflections/img/imgs/LED2/led2.jpg",
-        image3: "/Clear Reflections/img/imgs/LED3/led1.jpg"
+        image: "/img/imgs/LED2/led1.jpg",
+        image2: "/img/imgs/LED2/led2.jpg",
+        image3: "/img/imgs/LED3/led1.jpg"
     },
     {
         id: 13,
@@ -205,9 +208,9 @@ Provides clean and clear reflections.
 Durable and scratch resistant.`,
         sizes: ["20x30 inches", "24x36 inches"],
         colors: ["Clear"],
-     image: "/Clear Reflections/img/imgs/frameless2/frameless1.jpg",
-        image2: "/Clear Reflections/img/imgs/frameless2/frameless2.jpg",
-        image3: "/Clear Reflections/img/imgs/frameless2/frameless3.jpg"
+     image: "/img/imgs/frameless2/frameless1.jpg",
+        image2: "/img/imgs/frameless2/frameless2.jpg",
+        image3: "/img/imgs/frameless2/frameless3.jpg"
      },
     {
         id: 14,
@@ -221,9 +224,9 @@ Perfect for grand interiors.
 Adds timeless elegance.`,
         sizes: ["36x48 inches", "40x60 inches"],
         colors: ["Gold", "Bronze"],
-        image: "/Clear Reflections/img/imgs/antique2/antique1.jpg",
-        image2: "/Clear Reflections/img/imgs/antique2/antique2",
-        image3: "/Clear Reflections/img/imgs/antique2/antique3.jpg"
+        image: "/img/imgs/antique2/antique1.jpg",
+        image2: "/img/imgs/antique2/antique2",
+        image3: "/img/imgs/antique2/antique3.jpg"
     },
     {
         id: 15,
@@ -237,9 +240,9 @@ Enhances entrance decor beautifully.
 Stylish and lightweight.`,
         sizes: ["20 inch", "26 inch"],
         colors: ["White", "Black"],
-        image: "/Clear Reflections/img/imgs/arcylic2/arcylic1.jpg",
-        image2: "/Clear Reflections/img/imgs/arcylic2/arcylic2.jpg",
-        image3: "/Clear Reflections/img/imgs/arcylic2/arcylic3.jpg"
+        image: "/img/imgs/arcylic2/arcylic1.jpg",
+        image2: "/img/imgs/arcylic2/arcylic2.jpg",
+        image3: "/img/imgs/arcylic2/arcylic3.jpg"
     },
     {
         id: 16,
@@ -253,9 +256,9 @@ Enhances lighting and creates a welcoming atmosphere.
 Premium finish with long-lasting durability.`,
         sizes: ["28x38 inches", "32x44 inches"],
         colors: ["Gold", "Ivory"],
-        image: "/Clear Reflections/img/imgs/decor3/decor1.jpg",
-        image2: "/Clear Reflections/img/imgs/decor3/decor2.jpg",
-        image3: "/Clear Reflections/img/imgs/decor3/decor3.jpg"
+        image: "/img/imgs/decor3/decor1.jpg",
+        image2: "/img/imgs/decor3/decor2.jpg",
+        image3: "/img/imgs/decor3/decor3.jpg"
     },
     {
         id: 17,
@@ -269,9 +272,9 @@ Anti-fog technology for clear reflection.
 Perfect for modern smart homes.`,
         sizes: ["30x40 inches", "36x48 inches"],
         colors: ["Black", "Blue LED"],
-        image: "/Clear Reflections/img/imgs/bluetooth2/bluetooth1.jpg",
-        image2: "/Clear Reflections/img/imgs/bluetooth2/bluetooth2.jpg",
-        image3: "/Clear Reflections/img/imgs/bluetooth2/bluetooth3.jpg"
+        image: "/img/imgs/bluetooth2/bluetooth1.jpg",
+        image2: "/img/imgs/bluetooth2/bluetooth2.jpg",
+        image3: "/img/imgs/bluetooth2/bluetooth3.jpg"
     },
     {
         id: 18,
@@ -285,9 +288,9 @@ Wooden craftsmanship with timeless design.
 Adds charm to traditional interiors.`,
         sizes: ["26x36 inches", "30x42 inches"],
         colors: ["Teak", "Brown"],
-        image: "/Clear Reflections/img/imgs/wooden framed 3/woodenframed1.jpg",
-        image2: "/Clear Reflections/img/imgs/wooden framed 3/woodenframed2.jpg",
-        image3: "/Clear Reflections/img/imgs/wooden framed 3/woodenframed3.jpg"
+        image: "/img/imgs/wooden framed 3/woodenframed1.jpg",
+        image2: "/img/imgs/wooden framed 3/woodenframed2.jpg",
+        image3: "/img/imgs/wooden framed 3/woodenframed3.jpg"
     },
     {
         id: 19,
@@ -301,9 +304,9 @@ Strong metal frame for durability.
 Perfect for corporate environments.`,
         sizes: ["22x30 inches", "26x36 inches"],
         colors: ["Black", "Grey"],
-        image: "/Clear Reflections/img/imgs/frameless2/frameless1.jpg",
-        image2: "/Clear Reflections/img/imgs/frameless2/frameless2.jpg",
-        image3: "/Clear Reflections/img/imgs/frameless2/frameless3.jpg"
+        image: "/img/imgs/frameless2/frameless1.jpg",
+        image2: "/img/imgs/frameless2/frameless2.jpg",
+        image3: "/img/imgs/frameless2/frameless3.jpg"
     },
     {
         id: 20,
@@ -317,9 +320,9 @@ Adds elegance and modern luxury.
 Ideal for stylish living rooms.`,
         sizes: ["30x40 inches", "34x46 inches"],
         colors: ["Crystal", "Silver"],
-        image: "/Clear Reflections/img/imgs/frameless3/frameless.jpg",
-        image2: "/Clear Reflections/img/imgs/frameless3/frameless2.jpg",
-        image3: "/Clear Reflections/img/imgs/frameless3/frameless3.jpg",
+        image: "/img/imgs/frameless3/frameless.jpg",
+        image2: "/img/imgs/frameless3/frameless2.jpg",
+        image3: "/img/imgs/frameless3/frameless3.jpg",
      },
     {
         id: 21,
@@ -333,9 +336,9 @@ Strong frame with smooth finishing.
 Blends with modern and classic decor.`,
         sizes: ["20x28 inches", "24x32 inches"],
         colors: ["Walnut", "Brown"],
-        image: "/Clear Reflections/img/imgs/wooden framed 4/woodenframed1.jpg",
-        image2: "/Clear Reflections/img/imgs/wooden framed 4/woodenframed2.jpg",
-        image3: "/Clear Reflections/img/imgs/wooden framed 4/woodenframed3.jpg"
+        image: "/img/imgs/wooden framed 4/woodenframed1.jpg",
+        image2: "/img/imgs/wooden framed 4/woodenframed2.jpg",
+        image3: "/img/imgs/wooden framed 4/woodenframed3.jpg"
     },
     {
         id: 22,
@@ -349,9 +352,9 @@ Energy efficient and stylish design.
 Perfect for grooming and makeup.`,
         sizes: ["24x36 inches", "30x42 inches"],
         colors: ["Cool White", "Soft White"],
-        image: "/Clear Reflections/img/imgs/wooden framed 5/woodenframed1.jpg",
-        image2: "/Clear Reflections/img/imgs/wooden framed 5/woodenframed2.jpg",
-        image3: "/Clear Reflections/img/imgs/wooden framed 5/woodenframed3.jpg"
+        image: "/img/imgs/wooden framed 5/woodenframed1.jpg",
+        image2: "/img/imgs/wooden framed 5/woodenframed2.jpg",
+        image3: "/img/imgs/wooden framed 5/woodenframed3.jpg"
     },
     {
         id: 23,
@@ -365,9 +368,9 @@ Clear reflection with modern style.
 Scratch resistant surface.`,
         sizes: ["22x30 inches", "26x36 inches"],
         colors: ["Clear"],
-        image: "/Clear Reflections/img/imgs/LED3/led2.jpg",
-        image2: "/Clear Reflections/img/imgs/LED3/pexels-artbovich-7750122.jpg",
-        image3: "/Clear Reflections/img/imgs/LED2/pexels-artbovich-6980732.jpg"
+        image: "/img/imgs/LED3/led2.jpg",
+        image2: "/img/imgs/LED3/pexels-artbovich-7750122.jpg",
+        image3: "/img/imgs/LED2/pexels-artbovich-6980732.jpg"
     },
     {
         id: 24,
@@ -381,9 +384,9 @@ Intricate detailing with premium finish.
 Enhances royal interiors.`,
         sizes: ["34x46 inches", "38x52 inches"],
         colors: ["Gold", "Bronze"],
-        image: "/Clear Reflections/img/imgs/antique3/antique1.jpg",
-        image2: "/Clear Reflections/img/imgs/antique3/antique2.jpg",
-        image3: "/Clear Reflections/img/imgs/antique3/antique3.jpg"
+        image: "/img/imgs/antique3/antique1.jpg",
+        image2: "/img/imgs/antique3/antique2.jpg",
+        image3: "/img/imgs/antique3/antique3.jpg"
     },
     {
         id: 25,
@@ -397,141 +400,105 @@ Perfect for modern entryways.
 Lightweight and easy installation.`,
         sizes: ["22 inch", "28 inch"],
         colors: ["White", "Black"],
-        image: "/Clear Reflections/img/imgs/arcylic3/arcylic1.jpg",
-        image2: "/Clear Reflections/img/imgs/arcylic3/arcylic2.jpg",
-        image3: "/Clear Reflections/img/imgs/arcylic3/arcylic3.jpg"
+        image: "/img/imgs/arcylic3/arcylic1.jpg",
+        image2: "/img/imgs/arcylic3/arcylic2.jpg",
+        image3: "/img/imgs/arcylic3/arcylic3.jpg"
     },
 
 ];
+let singleproduct = mirrors.find(function (items) {
+    return items.id == productId
+})
 
-function reset(e) {
-    container.innerHTML = "";
+let container = document.getElementById('detail')
+if (!singleproduct) {
+    container.innerHTML = "<h2>Product not found</h2>";
+} else {
+    container.innerHTML = ` <div class="col-md-4">
+          <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="${singleproduct.image}" class="d-block w-100" alt="..." style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
+    </div>
+    <div class="carousel-item">
+      <img src="${singleproduct.image2}" class="d-block w-100" alt="..." style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
+    </div>
+    <div class="carousel-item">
+      <img src="${singleproduct.image3}" class="d-block w-100" alt="..." style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            </div>
+            <div class="col-md-8">
+                <h1>${singleproduct.name}</h1>
+                <div class="mb-3">
+                    <span class="badge bg-success">In Stock</span>
+                </div>
+                <p class="h3 text-primary mb-4">Rs.${singleproduct.price}</p>
+                <p>${singleproduct.description}</p>
+                <p><b>Material Type: </b>${singleproduct.materialType}</p>
+                <p><b>Mirror Type: </b>${singleproduct.mirrorType}</p>
+                <label for="size">Size:</label>
+                <select name="size" id="size">
+        <option value="" id="" class=''>${singleproduct.sizes[0]}</option>
+        <option value="" id="">${singleproduct.sizes[1]}</option>
+    </select>
+                <label for="Color">Color:</label>
+                <select name="size" id="Color">
+        <option value="" id="" class=''>${singleproduct.colors[0]}</option>
+        <option value="" id="">${singleproduct.colors[1]}</option>
 
-    for (let i = 0; i < mirrors.length; i++) {
+    </select>
+                </div> `
+}
 
 
-        container.innerHTML += `<div class="col-6 col-lg-3" id="card">
-        <div class="card text-left">
-        <img class="card-img-top" src="${mirrors[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
-        <div class="card-body">
-        <h4 class="card-title fs-6">${mirrors[i].name}</h4>
-        <p class="card-text text-dark fs-6">Rs. <b>${mirrors[i].price}</b>
-        
-        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${mirrors[i].id}" role="button">BUY</a>
-        </p>
-        
-        </div>
-        </div>
-        </div>`
+function download() {
+    html2pdf().from(container).save('abc.pdf');
+
+}
 
 
+let qtyInput = document.getElementById("qty")
+let count = 1
+
+document.getElementById("inc").addEventListener("click", () => {
+    count++
+    qtyInput.value = count
+})
+
+document.getElementById("dec").addEventListener("click", () => {
+    if (count > 1) {
+        count--
+        qtyInput.value = count
     }
-}
-reset()
-function filters(material) {
-    container.innerHTML = ''
-    let filter = mirrors.filter(function (items) {
-
-        return items.materialType.toLowerCase().includes(material.toLowerCase())
-    })
-    for (let i = 0; i < filter.length; i++) {
-        container.innerHTML += `<div class="col-6 col-lg-3" id="card">
-        <div class="card text-left">
-        <img class="card-img-top" src="${filter[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
-        <div class="card-body">
-        <h4 class="card-title fs-6">${filter[i].name}</h4>
-        <p class="card-text text-dark fs-6">Rs. <b>${filter[i].price}</b>
-        
-        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${filter[i].id}" role="button">BUY</a>
-        </p>
-        
-        </div>
-        </div>
-        </div>`}
-
-
-
-
-}
-
-function filters2(material2) {
-    container.innerHTML = ''
-    let filter2 = mirrors.filter(function (items2) {
-
-        return items2.mirrorType.toLowerCase().includes(material2.toLowerCase())
-    })
-    for (let i = 0; i < filter2.length; i++) {
-        container.innerHTML += `<div class="col-6 col-lg-3" id="card">
-        <div class="card text-left">
-        <img class="card-img-top" src="${filter2[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
-        <div class="card-body">
-        <h4 class="card-title fs-6">${filter2[i].name}</h4>
-        <p class="card-text text-dark fs-6">Rs. <b>${filter2[i].price}</b>
-        
-        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${filter2[i].id}" role="button">BUY</a>
-        </p>
-        
-        </div>
-        </div>
-        </div>`}
-}
-
-function filters3(material3) {
-    container.innerHTML = ''
-    let filter3 = mirrors.filter(function (items3) {
-
-        return items3.name.toLowerCase().includes(material3.toLowerCase())
-    })
-    if (filter3.length > 0) {
-        for (let i = 0; i < filter3.length; i++) {
-            container.innerHTML += `<div class="col-6 col-lg-3" id="card">
-        <div class="card text-left">
-        <img class="card-img-top" src="${filter3[i].image}" alt="" style="height: 100%; width: 100%; object-fit: cover; aspect-ratio: 1/1;">
-        <div class="card-body">
-        <h4 class="card-title fs-6">${filter3[i].name}</h4>
-        <p class="card-text text-dark fs-6">Rs. <b>${filter3[i].price}</b>
-        
-        <a class="btn btn-primary float-end h-25" href="./singleproduct.html?id=${filter3[i].id}" role="button">BUY</a>
-        </p>
-        
-        </div>
-        </div>
-        </div>`}
-    } else {
-        container.innerHTML = `<div class="container text-center d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
-  
-  <img src="https://freshmeat.com.pk/public/frontend/default/assets/img/no-data-found.png?v=v4.4.0" 
-       class="img-fluid mb-4" 
-       alt="">
-  <p class="text-muted">Sorry, the product you are looking for does not exist or has been removed.</p>
-
-  
-  <a href="./Product.html" class="btn btn-primary mt-3">Back to Shop</a>
-
-</div>`}
-}
-
-
-
-let form1 = document.getElementById('form1')
-let select1 = document.getElementById('select1')
-form1.addEventListener('submit', function (e) {
-    e.preventDefault()
-    console.log(select1.value)
-    filters(select1.value)
 })
-let form2 = document.getElementById('form2')
-let select2 = document.getElementById('select2')
-form2.addEventListener('submit', function (e) {
-    e.preventDefault()
-    filters2(select2.value)
-})
+const currentMirror =mirrors.find(m =>m.id== productId);
 
-let form3 = document.getElementById('form3')
-let input3 = document.getElementById('input3')
+        const similarMirrors=mirrors.filter(m=> m.mirrorType===currentMirror.mirrorType &&m.id !==currentMirror.id).slice(0,4);
 
-form3.addEventListener('submit', function (l) {
-    l.preventDefault()
-    filters3(input3.value)
-    console.log(input3.value)
-})
+        const similarcontainer=document.getElementById('similiarprod')
+        similarMirrors.forEach(item => {
+            similarcontainer.innerHTML += `
+                <div class="col-6 col-sm-5 g-3 col-lg-3">
+<a href="/Pages/singleproduct.html?id=${item.id}" class="card-link text-decoration-none">
+                        <div class="card text-left h-100">
+                            <img class="card-img-top" src="${item.image}" alt="${item.name}" style="width: 100%; height: 100%; aspect-ratio:1 / 1; object-fit: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title fs-4 text-dark">${item.name}</h4>
+                                <p class="card-text text-dark fs-5">Rs. <b>${item.price.toLocaleString()}</b></p>
+                                <p class="card-text text-muted fs-6 text-truncate">${item.description}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            `;
+        });
